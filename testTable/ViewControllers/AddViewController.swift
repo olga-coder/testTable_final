@@ -47,7 +47,7 @@ class AddViewController: UIViewController {
   @IBAction func saveClick(_ sender: Any) {
     let id:Int = Int(Date().timeIntervalSince1970)
     let title:String = titleLabel.text ?? "NO VALUE"
-    let text:String = textLabel.text ?? "NO VALUE"
+    let text:String = textLabel.text ?? "NO "
     let image:UIImage = self.imageView.image!;
     
     let vehiculo = Vehiculo(id:id,title:title,text:text ,image:image)
